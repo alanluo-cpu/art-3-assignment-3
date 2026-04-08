@@ -1,0 +1,36 @@
+body {
+    animation: colorCycle 10s ease-in-out infinite alternate;
+
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+
+}
+
+@keyframes colorCycle {
+    0% {
+        background-color: rgb(187, 143, 85);
+    }
+
+    33% {
+        background-color: rgb(162, 159, 56);
+    }
+
+    66% {
+        background-color: rgb(168, 107, 17);
+    }
+
+    100% {
+        background-color: rgb(131, 118, 38);
+    }
+}
+
+h1 {
+    font-size: 50px;
+    color: cyan;
+    text-shadow: 2px 2px black;
+}
+
+.wrapper {
+    box-shadow: 100px 100px 80px #888888;
+}

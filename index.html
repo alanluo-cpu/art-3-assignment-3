@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalgia</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <audio autoplay loop>
+        <source src="Castle-in-the-sky-piano-version.mp3" type="">
+    </audio>
+
+    <div class="wrapper">
+
+    <h1>Nostalgic</h1>
+
+    <p>What era of music did you grow up on?</p>
+
+    <input type="text" id="musicEra" name="musicEra">
+    <button onclick="submitMusicEra()">Submit</button>
+    <p id="response"></p>
+    <script>
+        function submitMusicEra() {
+            const musicEra = document.getElementById('musicEra').value;
+            document.getElementById('response').innerText = `You grew up on ${musicEra} music!`;
+        }        </script>
+
+    <p>What is your favorite genre of music?</p>
+
+    <input type="text" id="musicGenre" name="musicGenre">
+    <button onclick="submitMusicGenre()">Submit</button>
+    <p id="genreResponse"></p>
+    <script>
+        function submitMusicGenre() {
+            const musicGenre = document.getElementById('musicGenre').value;
+            document.getElementById('genreResponse').innerText = `Your favorite genre of music is ${musicGenre}!`;
+        }
+    </script>
+
+    <button onclick="">submit</button>
+
+    </div>
+</body>
+
+</html>
