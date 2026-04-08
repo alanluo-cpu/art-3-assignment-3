@@ -16,73 +16,99 @@
         <source src="Castle-in-the-sky-piano-version.mp3" type="audio/mpeg">
     </audio>
 
-     <button onclick="document.querySelector('audio').play()">Play Music</button>
+    <button onclick="document.querySelector('audio').play()">Play Music</button>
     <button onclick="document.querySelector('audio').pause()">Pause Music</button>
 
     <div class="wrapper">
 
-    <h1>A Trip Down Memory Lane</h1>
+        <h1>A Trip Down Memory Lane</h1>
 
-    <p>What music did you enjoy listening to when you were growing up? Has that changed?</p>
+        <p>What music did you enjoy listening to when you were growing up? Has that changed?</p>
 
-    <input type="text">
-
-
-
-    <p>Is the music group you used follow still together or have they disbanded?</p>
-
-    <input type="text">
-
-    <p>Do you remember your favorite TV show or movie as a child? Do you still watch it?</p>
-
-    <input type="text">
-
-    <p>Was there a favorite game you enjoyed playing?</p>
-
-    <input type="text">
-
-    <p>Still remember any of your old teachers? Did you have a favorite one?</p>
-
-    <input type="text">
-
-    <p>How about some of your old friends? Do you still keep in touch?</p>
-
-    <input type="text">
-    
-    <p>What were some of your favorite toys to play with as a kid? Do you still have them?</p>
-
-    <input type="text">   
+        <input type="text">
 
 
-    <p>Did you go on any trips with your family? If yes, then where?</p>
 
-    <input type="text">
+        <p>Is the music group you used follow still together or have they disbanded?</p>
 
-    <p>What places do you remember very fondly?</p>
+        <input type="text">
 
-    <input type="text">
+        <p>Do you remember your favorite TV show or movie as a child? Do you still watch it?</p>
 
-    <p>What is your most cherished memory from your childhood?</p>
+        <input type="text">
 
-    <input type="text">
+        <p>Was there a favorite game you enjoyed playing?</p>
 
-    <p>What is something you wish you could go back and do again?</p>
+        <input type="text">
 
-    <input type="text">
+        <p>Still remember any of your old teachers? Did you have a favorite one?</p>
 
-    <p>How did you use to mainly spend your time during summer breaks?</p>
+        <input type="text">
 
-    <input type="text">
+        <p>How about some of your old friends? Do you still keep in touch?</p>
 
-    <p>Was there a skill that you were so proud of learning? Is there one you wish you could've learned?</p>
+        <input type="text">
 
-    <input type="text">
+        <p>What were some of your favorite toys to play with as a kid? Do you still have them?</p>
 
-    <p>After answering all those questions, how about you take a moment, close your eyes, and spend some time with your thoughts.</p>
+        <input type="text">
 
-    <p></p>
+
+        <p>Did you go on any trips with your family? If yes, then where?</p>
+
+        <input type="text">
+
+        <p>What places do you remember very fondly?</p>
+
+        <input type="text">
+
+        <p>What is your most cherished memory from your childhood?</p>
+
+        <input type="text">
+
+        <p>What is something you wish you could go back and do again?</p>
+
+        <input type="text">
+
+        <p>How did you use to mainly spend your time during summer breaks?</p>
+
+        <input type="text">
+
+        <p>Was there a skill that you were so proud of learning? Is there one you wish you could've learned?</p>
+
+        <input type="text">
+
+        <p>After answering all those questions, how about you take a moment, close your eyes, and spend some time with
+            your thoughts.</p>
+
+        <p></p>
 
     </div>
+
+    <script>
+        function makeFallingCircle() {
+            const circle = document.createElement("div");
+            circle.className = "falling-circle";
+
+            const size = Math.random() * 30 + 10;
+            const left = Math.random() * window.innerWidth;
+            const duration = Math.random() * 4 + 4;
+
+            circle.style.width = size + "px";
+            circle.style.height = size + "px";
+            circle.style.left = left + "px";
+            circle.style.animationDuration = duration + "s";
+
+            document.body.appendChild(circle);
+
+            setTimeout(() => {
+                circle.remove();
+            }, duration * 1000);
+        }
+
+        setInterval(makeFallingCircle, 300);
+    </script>
+
 </body>
 
 </html>
