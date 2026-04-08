@@ -27,10 +27,27 @@ body {
 
 h1 {
     font-size: 50px;
-    color: cyan;
+    color: gold;
     text-shadow: 2px 2px black;
 }
 
-.wrapper {
-    box-shadow: 100px 100px 80px #888888;
+p {
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px white;
 }
+
+textarea, input, select {
+  field-sizing: content;
+  
+  min-inline-size: 20ch;
+  max-inline-size: 150ch;
+  block-size: 2rem;
+}
+
+
+
+.wrapper {
+    box-shadow: 100px 100px 10px 100px #3b3b3b;
+}
+
