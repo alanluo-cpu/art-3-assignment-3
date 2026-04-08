@@ -1,5 +1,4 @@
 body {
-    animation: colorCycle 10s ease-in-out infinite alternate;
 
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -7,34 +6,18 @@ body {
 
 }
 
-@keyframes colorCycle {
-    0% {
-        background-color: rgb(187, 143, 85);
-    }
 
-    33% {
-        background-color: rgb(162, 159, 56);
-    }
-
-    66% {
-        background-color: rgb(168, 107, 17);
-    }
-
-    100% {
-        background-color: rgb(131, 118, 38);
-    }
-}
 
 h1 {
     font-size: 50px;
-    color: gold;
+    color: white;
     text-shadow: 2px 2px black;
 }
 
 p {
-    font-size: 20px;
-    color: black;
-    text-shadow: 2px 2px white;
+    font-size: 30px;
+    color: white;
+    text-shadow: 3px 3px black;
 }
 
 textarea, input, select {
@@ -78,4 +61,12 @@ body::after {
       rgba(0, 0, 0, 0.10) 50%,
       rgba(0, 0, 0, 0.00) 100%
     );
+}
+
+body {
+    background-image: url('sunset-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ensures the background covers the full viewport height */
 }
